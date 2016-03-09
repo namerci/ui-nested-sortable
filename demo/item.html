@@ -1,0 +1,5 @@
+<div>{{ item.label }}</div>
+
+<ul ng-model="item.children" ui-nested-sortable="demo.sortableConfig">
+    <li ng-repeat="item in item.children" ng-include="'item.html'"></li>
+</ul>

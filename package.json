@@ -1,0 +1,23 @@
+{
+  "name": "ui-nested-sortable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ui-nested-sortable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namerci/ui-nested-sortable.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namerci/ui-nested-sortable/issues"
+  },
+  "homepage": "https://github.com/namerci/ui-nested-sortable#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}

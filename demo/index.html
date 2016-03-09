@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <title>UI Nested Sortable</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="demo.css">
 </head>
-<body ng-app="ui.nested-sortable">
+<body ng-app="Demo" class="demo">
 
-<div class="container">
+<div class="container" ng-controller="DemoController as demo">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Sortable list - demo</h3>
+                </div>
+
+                <div class="panel-body">
+                    <ul ui-nested-sortable="demo.sortableConfig" ui-property="children" ng-model="demo.data">
+                        <li ng-repeat="item in demo.data" ng-include="'item.html'"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <pre>{{ demo.data | json }}</pre>
+        </div>
+    </div>
 
 </div>
 
-<script src="../bower_components/angular/angular.js"></script>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
 <script src="../bower_components/nestedSortable/jquery.mjs.nestedSortable.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
 <script src="../ui-nested-sortable.js"></script>
+<script src="demo.js"></script>
 </body>
 </html>

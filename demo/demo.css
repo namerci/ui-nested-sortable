@@ -1,0 +1,25 @@
+.demo {
+    padding-top: 50px;
+}
+.demo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.demo .sortable-error {
+    background: lightcoral;
+}
+.demo li {
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+}
+.demo li > ul {
+    padding-left: 30px;
+}
+
+
+.demo .ui-sortable-placeholder {
+    border: 1px dashed dodgerblue;
+}
