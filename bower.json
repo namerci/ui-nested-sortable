@@ -1,0 +1,27 @@
+{
+  "name": "ui-nested-sortable",
+  "authors": [
+    "Piotr Sałkowski <ps@mosqi.to>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.1",
+    "nestedSortable": "https://github.com/ilikenwf/nestedSortable.git#0812aa1c4128f90b10677c7a302342b4203978e7",
+    "angular-ui-sortable": "^0.13.4"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
